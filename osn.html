@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>OSN Talk</title>
-    
+
     <meta name="description" content="" />
     <meta name="author" content="Elena Palmer" />
 
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <!--<link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />-->
 
     <link href="css/osn-talk.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
+
+    <!--<link rel="shortcut icon" href="favicon.png" />-->
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
@@ -57,7 +57,8 @@
 
 
     <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>Or like these guys: [monty python three men]</p>
+        <p>Or like these guys:</p>
+        <p><img src="mp.jpg"/></p>
     </div>
 
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
@@ -101,13 +102,58 @@
         <p>Specifically...</p>
         <p>JSONPath</p>
     </div>
-   
+
     <div class="step" data-x="3325" data-y="5000" data-z="-1000" data-scale="1">
         <p>We began discussing a whole host of things our previous ecosystem had prevented; stuff like:</p>
         <p>What are <strong>other people</strong> doing?</p>
         <p>How have <strong>other industries</strong> solved these problems?</p>
     </div>
 
+    <div class="step" data-x="3325" data-y="6000" data-z="-1000" data-scale="1">
+        <p>Our clients want to be able to easily add fields from extensions and customize where those fields are mapped.</p><br/>
+        <p>We wanted code that could be maintained at scale - <strong>without</strong> relying on
+        HP or Nessus to keep their vulnerability data consistent.</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="7000" data-z="-1000" data-scale="1">
+        <q>JSONPath, Data Parsing, and Us</q>
+        <p>The key became obvious: <strong>turn the structure of the document into a configuration detail</strong>.
+        <p>[exerpt of parse doc]</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="8000" data-z="-1000" data-scale="1">
+        <p>
+          <ul>
+            <li>Customers can add fields - as long as the fields are of a consistent structure.</li>
+            <li>Code changes are required for radically new or modified structure - much rarer than minor tweaks.</li>
+            <li>We test the efficacy of our parse algorithms, <strong>not</strong> the structure of $Vendor's document.</li>
+            <li>Vendor data is divided by structure - no more strongly typed $Vendor_Version classes.</li>
+          </ul>
+        </p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="9000" data-z="-1000" data-scale="1">
+        <p>[SAMPLE PARSE FILE GOES HERE]</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="10000" data-z="-1000" data-scale="1">
+        <p>[talk here about data types etc]</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="11000" data-z="-1000" data-scale="1">
+        <p>[talk here about parsing algo, jsonpath, java issues etc]</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="12000" data-z="-1000" data-scale="1">
+        <p>[talk here about treating parse algos as external tools]</p>
+    </div>
+
+    <div class="step" data-x="3325" data-y="13000" data-z="-1000" data-scale="1">
+        <q>Result</q>
+        <p>Customers can add their own fields :)</p>
+        <p>We are maintaining our own intellectual property - NOT external company's schema files</p>
+        <p>yay</p>
+    </div>
 </div>
 
 <!--<div id="impress-toolbar"></div>-->
@@ -118,4 +164,3 @@
 
 </body>
 </html>
-
