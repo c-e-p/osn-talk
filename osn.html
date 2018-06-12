@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>OSN Talk</title>
+    <title>Building Data Parse Algorithms with Open Source Technology</title>
 
     <meta name="description" content="" />
     <meta name="author" content="Elena Palmer" />
@@ -19,65 +19,65 @@
 
 <div id="impress">
 
-    <div class="step" data-x="-1000" data-y="-5000">
+    <div id="intro" class="step" data-x="-1000" data-y="-5000">
         <q><small><strong>HOW TO KNOW WHAT WE CANNOT KNOW</strong></small></q>
     </div>
 
-    <div class="step slide-middle" data-x="0" data-y="-5000">
-        <q>(Like why I didn't spend more than 15 seconds thinking of a talk title 6 months ago)</q>
+    <div id="intro-sub" class="step slide-middle" data-x="0" data-y="-5000">
+        <p>(Like why I picked that title 6 months ago.)</p>
     </div>
 
-    <div class="step slide-middle" data-x="1000" data-y="-5000">
+    <div id="about-me" class="step slide-middle" data-x="1000" data-y="-5000">
         <div class="slide-title"><q>About Me</q></div><br/>
         <p>Elena Palmer<br/>
         Software Developer, NetSPI<br/>
         @imperfectelena</p>
     </div>
 
-    <div class="step slide-middle" data-x="2000" data-y="-5000">
+    <div id="about-netspi" class="step slide-middle" data-x="2000" data-y="-5000">
         <div class="slide-title"><img src="netspi-full.png"/></div><br/>
         <p>Pentesting<br/>
         Vulnerability Management<br/></p>
     </div>
 
-    <div class="step slide-middle" data-x="3000" data-y="-5000">
+    <div id="life-problems" class="step slide-middle" data-x="3000" data-y="-5000">
         <q>Software development at a pentesting firm?</q>
     </div>
 
-    <div class="step" data-x="4500" data-y="-5000">
+    <div id="the-scream" class="step" data-x="4500" data-y="-5000">
       <p><img src="the-scream.jpg"/></p>
     </div>
 
-    <div class="step slide-middle" data-x="5500" data-y="-5000">
+    <div id="internal-clients" class="step slide-middle" data-x="5500" data-y="-5000">
       <p>Internal clients: like a slideshow of your most embarrassing moments, played at the Superbowl.</p>
     </div>
 
-    <div class="step slide-middle" data-x="6500" data-y="-2000">
+    <div id="customers" class="step slide-middle" data-x="6500" data-y="-5000">
         <p>And then there's the <strong>customers</strong>...</p>
     </div>
 
-    <div class="step slide-middle" data-x="2825" data-y="2000" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="customer-manager" class="step slide-middle" data-x="2825" data-y="2000" data-z="-3000" data-rotate="300" data-scale="1">
         <p>One wants an affordable platform that can show vulnerability data as simple prioritized categories.</p>
     </div>
 
-    <div class="step slide-middle" data-x="3000" data-y="500" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="customer-pentester" class="step slide-middle" data-x="3000" data-y="500" data-z="-3000" data-rotate="300" data-scale="1">
         <p>One wants auto-matching of findings and custom step-by-step recreation & remediation workflows for internal pentesters.</p>
     </div>
 
-    <div  class="step slide-middle" data-x="3325" data-y="-1000" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="customer-compliance" class="step slide-middle" data-x="3325" data-y="-1000" data-z="-3000" data-rotate="300" data-scale="1">
         <p>One is managing PCI compliance for the systems you're storing vulnerability data from...</p>
     </div>
 
-    <div class="step slide-middle" data-x="325" data-y="1000" data-z="-1000" data-scale="1">
+    <div id="customer-compliance-2" class="step slide-middle" data-x="325" data-y="1000" data-z="-1000" data-scale="1">
         <p>...and she <strong>hates you</strong>.</p>
     </div>
 
-    <div class="step slide-middle" data-x="1325" data-y="4000" data-z="-1000" data-scale="1">
+    <div id="old-tech" class="step slide-middle" data-x="1325" data-y="4000" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>The Old Tech</q></div><br/>
-        <p>C#, Ruby on Rails, and the nastiest set of XML files you'll ever meet...</p>
+        <p><ul><li>Closed source (C#)</li><li>Complex & tightly versioned vendor files</li></ul></p>
     </div>
 
-    <div class="step code-step" data-x="2325" data-y="4000" data-z="-1000" data-scale="1">
+    <div id="fake-scan" class="step code-step" data-x="2325" data-y="4000" data-z="-1000" data-scale="1">
       <xmp>
       <VendorReport version="6.5">
         <scanData>
@@ -104,8 +104,8 @@
     </div>
 
 
-    <div class="step slide-middle" data-x="3525" data-y="4000" data-z="-1000" data-scale="1">
-        <div class="slide-title"><q>Tips, tricks, & challenges</q></div><br/>
+    <div id="rewrite-challenges" class="step slide-middle" data-x="3525" data-y="4000" data-z="-1000" data-scale="1">
+        <div class="slide-title"><q>Challenges for Rewriting</q></div><br/>
         <p>
             <ul>
                 <li>Data integrity</li>
@@ -116,23 +116,23 @@
         </p>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="5000" data-z="-1000" data-scale="1">
+    <div id="go-west-young-man" class="step slide-middle" data-x="4325" data-y="5000" data-z="-1000" data-scale="1">
         <p>What are <strong>other people</strong> doing?</p>
         <p>How have <strong>other industries</strong> solved these problems?</p>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="6000" data-z="-1000" data-scale="1">
+    <div id="balance-priorities" class="step slide-middle" data-x="4325" data-y="6000" data-z="-1000" data-scale="1">
         <p>Our clients want to be able to easily add fields from extensions and customize where those fields are mapped.</p><br/>
         <p>We wanted code that could be maintained at scale - <strong>without</strong> relying on
         vendors to keep their vulnerability data consistent.</p>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="7000" data-z="-1000" data-scale="1">
+    <div id="the-solution" class="step slide-middle" data-x="4325" data-y="7000" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>JSONPath, Data Parsing, and Us</q></div><br/>
         <p>The key became obvious: <strong>turn the structure of the document into a configuration detail</strong>.
     </div>
 
-    <div class="step small-step slide-middle" data-x="4325" data-y="8000" data-z="-1000" data-scale="1">
+    <div id="solution-benefits" class="step small-step slide-middle" data-x="4325" data-y="8000" data-z="-1000" data-scale="1">
         <p>
           <ul>
             <li>Flexible field adding</li>
@@ -144,7 +144,7 @@
         </p>
     </div>
 
-    <div class="step code-step" data-x="4325" data-y="9000" data-z="-1000" data-scale="1">
+    <div id="fake-parse-file" class="step code-step" data-x="4325" data-y="9000" data-z="-1000" data-scale="1">
         <xmp>
           {
             "vulnerability": {
@@ -163,17 +163,17 @@
         </xmp>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="10000" data-z="-1000" data-scale="1">
+    <div id="parse-types" class="step slide-middle" data-x="4325" data-y="10000" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>Types of files</q></div>
         <ul><li>Nested</li><li>Pointer</li><li>Conditionally unique</li></ul>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="11000" data-z="-1000" data-scale="1">
+    <div id="parse-requirements" class="step slide-middle" data-x="4325" data-y="11000" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>Parsing requirements</q></div>
         <ul><li>Configurable uniqueness</li><li>Data combination</li><li>Backwards/forwards</li><li>New fields</li><li>Remapped fields</li></ul>
     </div>
 
-    <div class="step slide-middle" data-x="4325" data-y="12000" data-z="-1000" data-scale="1">
+    <div id="dev-result" class="step slide-middle" data-x="4325" data-y="12000" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>Result</q></div>
         <ul>
           <li>Customers can add their own fields</li>
