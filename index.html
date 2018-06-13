@@ -65,19 +65,19 @@
     </div>
 
     <div id="customer-compliance" class="step slide-middle" data-x="9500" data-y="-5650">
-        <p>One is managing PCI compliance for the systems you're storing vulnerability data from...</p>
+        <p>One is managing PCI compliance for your client's vulnerable systems...</p>
     </div>
 
     <div id="customer-compliance-2" class="step slide-middle" data-x="10500" data-y="-5975">
         <p>...and she <strong>hates you</strong>.</p>
     </div>
 
-    <div id="old-tech" class="step slide-middle" data-x="1325" data-y="4000" data-z="-1000" data-scale="1">
+    <div id="old-tech" class="step slide-middle" data-x="11000" data-y="-5975" data-z="-1000" data-scale="1">
         <div class="slide-title"><q>The Old Tech</q></div><br/>
         <p><ul><li>Closed source (C#)</li><li>Complex & tightly versioned vendor files</li></ul></p>
     </div>
 
-    <div id="fake-scan" class="step code-step" data-x="2325" data-y="4000" data-z="-1000" data-scale="1">
+    <div id="fake-scan" class="step code-step" data-x="12000" data-y="-5975">
       <xmp>
       <VendorReport version="6.5">
         <scanData>
@@ -104,7 +104,7 @@
     </div>
 
 
-    <div id="rewrite-challenges" class="step slide-middle" data-x="3525" data-y="4000" data-z="-1000" data-scale="1">
+    <div id="rewrite-challenges" class="step slide-middle" data-x="13500" data-y="-5975">
         <div class="slide-title"><q>Challenges for Rewriting</q></div><br/>
         <p>
             <ul>
@@ -116,26 +116,27 @@
         </p>
     </div>
 
-    <div id="rewrite-challenges-excel" class="step slide-middle" data-x="4525" data-y="4000" data-z="-1000" data-scale="1">
+    <!-- begin vertical slides -->
+    <div id="rewrite-challenges-excel" class="step slide-middle" data-x="13500" data-y="-4975">
         <p><center><img src="excel.png"/></center></p>
     </div>
 
-    <div id="go-west-young-man" class="step slide-middle" data-x="4525" data-y="5000" data-z="-1000" data-scale="1">
+    <div id="go-west-young-man" class="step slide-middle" data-x="13500" data-y="-3975">
         <p>What are <strong>other people</strong> doing?</p>
         <p>How have <strong>other industries</strong> solved these problems?</p>
     </div>
 
-    <div id="balance-priorities" class="step slide-middle" data-x="4525" data-y="6000" data-z="-1000" data-scale="1">
+    <div id="balance-priorities" class="step slide-middle" data-x="13500" data-y="-2975">
         <p>Our clients want to be able to easily add fields from extensions and customize where those fields are mapped.</p><br/>
         <p>We wanted code that could be maintained at scale - <strong>without</strong> relying on
         vendors to keep their vulnerability data consistent.</p>
     </div>
 
-    <div id="the-solution" class="step slide-middle" data-x="4525" data-y="7000" data-z="-1000" data-scale="1">
+    <div id="the-solution" class="step slide-middle" data-x="13500" data-y="-1975">
         <p>The key became obvious: <strong>turn the structure of the document into a configuration detail</strong>.
     </div>
 
-    <div id="solution-benefits" class="step small-step slide-middle" data-x="4525" data-y="8000" data-z="-1000" data-scale="1">
+    <div id="solution-benefits" class="step small-step slide-middle" data-x="13500" data-y="-975">
       <div class="slide-title"><q>Configuration-Based Approach</q></div><br/>
         <p>
           <ul>
@@ -147,7 +148,7 @@
         </p>
     </div>
 
-    <div id="fake-parse-file" class="step code-step" data-x="4525" data-y="9000" data-z="-1000" data-scale="1">
+    <div id="fake-parse-file" class="step code-step" data-x="13500" data-y="25">
         <xmp>
           {
             "vulnerability": {
@@ -166,32 +167,32 @@
         </xmp>
     </div>
 
-    <div id="parse-types" class="step slide-middle" data-x="4525" data-y="10000" data-z="-1000" data-scale="1">
+    <div id="parse-types" class="step slide-middle" data-x="13500" data-y="1025">
         <div class="slide-title"><q>Types of files</q></div>
         <ul><li>Nested</li><li>Pointer</li><li>Conditionally unique</li></ul>
     </div>
 
-    <div id="parse-requirements" class="step slide-middle" data-x="4525" data-y="11000" data-z="-1000" data-scale="1">
+    <div id="parse-requirements" class="step slide-middle" data-x="13500" data-y="2025">
         <div class="slide-title"><q>Parsing requirements</q></div>
         <ul><li>Configurable uniqueness</li><li>Data combination</li><li>Backwards/forwards</li><li>New fields</li><li>Remapped fields</li></ul>
     </div>
 
-    <div id="dev-result" class="step slide-middle" data-x="4525" data-y="12000" data-z="-1000" data-scale="1">
+    <div id="dev-result" class="step slide-middle" data-x="13500" data-y="3025">
         <div class="slide-title"><q>Did it work?</q></div>
         <p>Yes.</p>
     </div>
 
-    <div id="iteration-one-result" class="step slide-middle" data-x="4525" data-y="13000" data-z="-1000" data-scale="1">
+    <div id="iteration-one-result" class="step slide-middle" data-x="13500" data-y="4025">
         <div class="slide-title"><q>First-Gen Upgrade</q></div>
         <p><ul><li>Accommodates field adding/remapping</li><li>No strongly typed class files</li><li>Accommodates async data loading</li></ul></p>
     </div>
 
-    <div id="roadmap" class="step slide-middle" data-x="4525" data-y="14000" data-z="-1000" data-scale="1">
+    <div id="roadmap" class="step slide-middle" data-x="13500" data-y="5025">
         <div class="slide-title"><q>Roadmap</q></div>
         <p><ul><li>Extend data extraction algorithms to support users "teaching" the system to read a file</li><li>SDK for other vendor files/languages</li><li>Open source our tools</li></ul></p>
     </div>
 
-    <div id="the-end" class="step slide-middle" data-x="5525" data-y="14000" data-z="-1000" data-scale="1">
+    <div id="the-end" class="step slide-middle" data-x="13500" data-y="6025">
         <div class="slide-title"><q>Questions?</q></div>
         <p></p>
     </div>
