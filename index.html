@@ -19,56 +19,56 @@
 
 <div id="impress">
 
-    <div id="intro" class="step slide-middle" data-x="-1000" data-y="-5000">
+    <div id="intro" class="step slide-middle" data-x="-3000" data-y="-5000">
         <q><small><strong>HOW TO KNOW WHAT WE CANNOT KNOW</strong></small></q>
     </div>
 
-    <div id="intro-sub" class="step slide-middle" data-x="0" data-y="-5000">
+    <div id="intro-sub" class="step slide-middle" data-x="-2000" data-y="-5000">
         <p>(Like why I picked that title 6 months ago.)</p>
     </div>
 
-    <div id="about-me" class="step slide-middle" data-x="1000" data-y="-5000">
+    <div id="about-me" class="step slide-middle" data-x="-1000" data-y="-5000">
         <div class="slide-title"><q>About Me</q></div><br/>
         <p>Elena Palmer<br/>
         Software Developer, NetSPI<br/>
         @imperfectelena</p>
     </div>
 
-    <div id="about-netspi" class="step slide-middle" data-x="2000" data-y="-5000">
+    <div id="about-netspi" class="step slide-middle" data-x="0" data-y="-5000">
         <div class="slide-title"><img src="netspi-full.png"/></div><br/>
         <p>Pentesting<br/>
         Vulnerability Management<br/></p>
     </div>
 
-    <div id="life-problems" class="step slide-middle" data-x="3000" data-y="-5000">
+    <div id="life-problems" class="step slide-middle" data-x="1000" data-y="-5000">
         <q>Software development at a pentesting firm?</q>
     </div>
 
-    <div id="the-scream" class="step" data-x="4500" data-y="-5000">
+    <div id="the-scream" class="step" data-x="2500" data-y="-5000">
       <center><p><img src="the-scream.jpg"/></p></center>
     </div>
 
-    <div id="internal-clients" class="step slide-middle" data-x="5500" data-y="-5000">
+    <div id="internal-clients" class="step slide-middle" data-x="3500" data-y="-5000">
       <p>Internal clients: like a slideshow of your most embarrassing moments, played at the Superbowl.</p>
     </div>
 
-    <div id="customers" class="step slide-middle" data-x="6500" data-y="-5000">
+    <div id="customers" class="step slide-middle" data-x="4500" data-y="-5000">
         <p>And then there's the <strong>customers</strong>...</p>
     </div>
 
-    <div id="customer-manager" class="step slide-middle" data-x="7500" data-y="-5000">
+    <div id="customer-manager" class="step slide-middle" data-x="5500" data-y="-5000">
         <p>One wants an affordable platform that can show vulnerability data as simple prioritized categories.</p>
     </div>
 
-    <div id="customer-pentester" class="step slide-middle" data-x="8500" data-y="-5325">
+    <div id="customer-pentester" class="step slide-middle" data-x="6500" data-y="-5325">
         <p>One wants auto-matching of findings and custom step-by-step recreation & remediation workflows for internal pentesters.</p>
     </div>
 
-    <div id="customer-compliance" class="step slide-middle" data-x="9500" data-y="-5650">
+    <div id="customer-compliance" class="step slide-middle" data-x="7500" data-y="-5650">
         <p>One is managing PCI compliance for your client's vulnerable systems...</p>
     </div>
 
-    <div id="customer-compliance-2" class="step slide-middle" data-x="10500" data-y="-5975">
+    <div id="customer-compliance-2" class="step slide-middle" data-x="8500" data-y="-5975">
         <p>...and she <strong>hates you</strong>.</p>
     </div>
 
@@ -77,7 +77,7 @@
         <p><ul><li>Closed source (C#)</li><li>Complex & tightly versioned vendor files</li></ul></p>
     </div>
 
-    <div id="fake-scan" class="step code-step" data-x="12000" data-y="-5975">
+    <div id="fake-scan" class="step code-step-small" data-x="12000" data-y="-5975">
       <xmp>
       <VendorReport version="6.5">
         <scanData>
@@ -132,11 +132,40 @@
         vendors to keep their vulnerability data consistent.</p>
     </div>
 
-    <div id="the-solution" class="step slide-middle" data-x="13500" data-y="-1975">
+    <div id="adding-fields" class="step code-step-small" data-x="13500" data-y="-1975">
+        <xmp>
+          <VendorReport version="6.5">
+            <scanData>
+            <assetData>
+              <asset ipAddress="10.2.9.103" status="active" confidenceLevel="5.0">
+              <hostNames>
+                <hostName>mysite.com</hostName>
+                <hostName>mysite-2.com</hostName>
+              </hostNames>
+                <serverData>
+                  <server type="windows-2003" name="Microsoft Windows Server 2003 SP2"
+                      pci-compliance-status="fail">
+                    <Paragraph>
+          	          <Paragraph>Vulnerable OS: Microsoft Windows Server 2003 SP2
+          		         <Paragraph></Paragraph>
+                      </Paragraph>
+                    </Paragraph></xmp><b><xmp>
+                    <entryPointData>
+                      <entryPoint id=125 related_cve="CVE-2017-1209" seriousness_rank=5/>
+                    </entryPointData></xmp></b><xmp>
+                  </server>
+                </serverData>
+              </assetData>
+            </scanData>
+          </VendorReport>
+        </xmp>
+    </div>
+
+    <div id="the-solution" class="step slide-middle" data-x="13500" data-y="-975">
         <p>The key became obvious: <strong>turn the structure of the document into a configuration detail</strong>.
     </div>
 
-    <div id="solution-benefits" class="step small-step slide-middle" data-x="13500" data-y="-975">
+    <div id="solution-benefits" class="step small-step slide-middle" data-x="13500" data-y="25">
       <div class="slide-title"><q>Configuration-Based Approach</q></div><br/>
         <p>
           <ul>
@@ -148,7 +177,52 @@
         </p>
     </div>
 
-    <div id="fake-parse-file" class="step code-step" data-x="13500" data-y="25">
+    <div id="new-stack" class="step small-step slide-middle" data-x="13500" data-y="1025">
+      <div class="slide-title"><q>Tech Differences</q></div><br/>
+      <div id="wrap">
+        <div id="left_col">
+          <p>
+            <ul>
+              <li>C#</li>
+              <li>Nuget</li>
+              <li>Microsoft Office 2010 DLLs (yes, really)</li>
+            </ul>
+          </p>
+        </div>
+        <div id="right_col">
+          <p>
+            <ul>
+              <li>Java</li>
+              <li>Maven</li>
+              <li>JsonPath</li>
+              <li>Jackson</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="parse-types" class="step slide-middle" data-x="13500" data-y="2025">
+        <div class="slide-title"><q>Types of files</q></div>
+        <ul><li>Nested</li><li>Pointer</li><li>Conditionally unique</li></ul>
+    </div>
+
+    <div id="parse-requirements" class="step slide-middle" data-x="13500" data-y="3025">
+        <div class="slide-title"><q>Parsing requirements</q></div>
+        <ul><li>Configurable uniqueness</li><li>Data combination</li><li>Backwards/forwards</li><li>New fields</li><li>Remapped fields</li></ul>
+    </div>
+
+    <div id="dev-result" class="step slide-middle" data-x="13500" data-y="4025">
+        <div class="slide-title"><q>Did it work?</q></div>
+        <p>Yes.</p>
+    </div>
+
+    <div id="iteration-one-result" class="step slide-middle" data-x="13500" data-y="5025">
+        <div class="slide-title"><q>First-Gen Upgrade</q></div>
+        <p><ul><li>Accommodates field adding/remapping</li><li>No strongly typed class files</li><li>Accommodates async data loading</li></ul></p>
+    </div>
+
+    <div id="fake-parse-file" class="step code-step" data-x="13500" data-y="6025">
         <xmp>
           {
             "vulnerability": {
@@ -167,32 +241,12 @@
         </xmp>
     </div>
 
-    <div id="parse-types" class="step slide-middle" data-x="13500" data-y="1025">
-        <div class="slide-title"><q>Types of files</q></div>
-        <ul><li>Nested</li><li>Pointer</li><li>Conditionally unique</li></ul>
-    </div>
-
-    <div id="parse-requirements" class="step slide-middle" data-x="13500" data-y="2025">
-        <div class="slide-title"><q>Parsing requirements</q></div>
-        <ul><li>Configurable uniqueness</li><li>Data combination</li><li>Backwards/forwards</li><li>New fields</li><li>Remapped fields</li></ul>
-    </div>
-
-    <div id="dev-result" class="step slide-middle" data-x="13500" data-y="3025">
-        <div class="slide-title"><q>Did it work?</q></div>
-        <p>Yes.</p>
-    </div>
-
-    <div id="iteration-one-result" class="step slide-middle" data-x="13500" data-y="4025">
-        <div class="slide-title"><q>First-Gen Upgrade</q></div>
-        <p><ul><li>Accommodates field adding/remapping</li><li>No strongly typed class files</li><li>Accommodates async data loading</li></ul></p>
-    </div>
-
-    <div id="roadmap" class="step slide-middle" data-x="13500" data-y="5025">
+    <div id="roadmap" class="step slide-middle" data-x="13500" data-y="7025">
         <div class="slide-title"><q>Roadmap</q></div>
         <p><ul><li>Extend data extraction algorithms to support users "teaching" the system to read a file</li><li>SDK for other vendor files/languages</li><li>Open source our tools</li></ul></p>
     </div>
 
-    <div id="the-end" class="step slide-middle" data-x="13500" data-y="6025">
+    <div id="the-end" class="step slide-middle" data-x="13500" data-y="8025">
         <div class="slide-title"><q>Questions?</q></div>
         <p></p>
     </div>
